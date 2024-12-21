@@ -1541,7 +1541,7 @@ if __name__ == '__main__':
 		with open("data/persist/android_version.txt", "w") as f:
 			f.write("1.0.0")
 	
-        port = int(os.getenv("PORT", 5000))
+	port = int(os.getenv("PORT", 5000))
 	app.run(host="0.0.0.0", port=port)
 
 with app.app_context():
